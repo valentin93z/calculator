@@ -9,10 +9,9 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: #d5d5d5;
+  background-color: #82869D;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 .App {
@@ -22,6 +21,7 @@ body {
   text-align: center;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: -0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .cons {
@@ -89,4 +89,34 @@ body {
 
 #zero {
   grid-column: 1 / 3;
+}
+
+@media screen and (max-width: 400px) {
+  
+  .App {
+    width: 250px;
+    height: 357px;
+  }
+
+  .pad {
+    height: 270px;
+  }
+
+  .pad button {
+    font-size: 18px;
+  }
+
+  .cons {
+    height: 67px;
+  }
+
+  .formula {
+    font-size: 14px;
+    min-height: 20px;
+  }
+
+  .display {
+    font-size: 18px;
+    height: 20px;
+  }
 }
